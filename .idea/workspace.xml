@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Tarea(0.3.0) Registro de Empleados">
+    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Mejora(0.3.2) Logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registro/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/views.py" afterDir="false" />
@@ -96,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707973397830</updated>
-      <workItem from="1707973606695" duration="21567000" />
+      <workItem from="1707973606695" duration="21616000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -130,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708405086750</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Mejora(0.3.2) Logout">
+      <option name="closed" value="true" />
+      <created>1708406341121</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708406341122</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +172,7 @@
     <MESSAGE value="Tarea(0.1.0) Registro de Paciente (Modelos, Serializadores, Urls y Vistas), Migraciones." />
     <MESSAGE value="Tarea(0.2.0) Login de Paciente&#10;Mejora (0.2.1) Mejora del modelo Usuario" />
     <MESSAGE value="Tarea(0.3.0) Registro de Empleados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tarea(0.3.0) Registro de Empleados" />
+    <MESSAGE value="Mejora(0.3.2) Logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mejora(0.3.2) Logout" />
   </component>
 </project>

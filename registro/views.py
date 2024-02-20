@@ -134,3 +134,16 @@ class LogoutView(APIView):
         }
 
         return response
+class ChangePasswordView(APIView):
+    def post(self, request):
+        token = request.COOKIES.get('jwt')
+        payload = is_authenticated(token)
+
+        usuario = Usuario.objects.filter(identidad=payload['identidad']).first()
+        if usuario is None:
+            raise AuthenticationFailed('Error de Autenticación, Usuario no encontrado')
+
+        usuario.set_password(request.data['password'])
+        usuario.save()
+
+        return Response({'mensaje': 'Contraseña Cambiada'}, status=200)

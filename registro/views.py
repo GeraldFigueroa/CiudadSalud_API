@@ -86,7 +86,7 @@ class RegistroEmpleadoView(APIView):
         empleado = Usuario.objects.get(identidad=payload['identidad'])
 
         if empleado is None:
-            raise AuthenticationFailed('Error de Login')
+            raise AuthenticationFailed('Error de Autenticación, Usuario no encontrado')
 
         if not empleado.is_superuser or not empleado.is_staff:
             raise AuthenticationFailed('Usuario sin permisos')
@@ -116,7 +116,6 @@ class RegistroEmpleadoView(APIView):
 def is_authenticated(token):
     if not token:
         raise AuthenticationFailed('Sin Autenticación')
-
     try:
         payload = jwt.decode(token, 'secret', 'HS256')
     except Exception as e:
@@ -124,3 +123,14 @@ def is_authenticated(token):
         raise AuthenticationFailed('TOKEN ERROR')
 
     return payload
+
+
+class LogoutView(APIView):
+    def post(self, request):
+        response = Response()
+        response.delete_cookie('jwt')
+        response.data = {
+            "mensaje": 'Sesión Cerrada'
+        }
+
+        return response

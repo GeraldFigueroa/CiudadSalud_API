@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, BaseUserManager
 
 class Persona(models.Model):
     identidad = models.CharField(max_length=15, primary_key=True)
@@ -14,12 +14,32 @@ class Persona(models.Model):
     estado_civil = models.CharField(max_length=100)
 
 
+class CustomUserManager(BaseUserManager):
+    def create_user(self, identidad, password=None, **extra_fields):
+        if not identidad:
+            raise ValueError('El campo identidad debe ser proporcionado')
+        user = self.model(identidad=identidad, **extra_fields)
+        user.set_password(password)
+        user.save(using=self._db)
+        return user
+
+    def create_superuser(self, identidad, password=None, **extra_fields):
+        extra_fields.setdefault('is_staff', True)
+        extra_fields.setdefault('is_superuser', True)
+
+        if extra_fields.get('is_staff') is not True:
+            raise ValueError('Los superusuarios deben tener is_staff=True.')
+        if extra_fields.get('is_superuser') is not True:
+            raise ValueError('Los superusuarios deben tener is_superuser=True.')
+        persona = Persona.objects.get(identidad = identidad)
+        return self.create_user(persona, password, **extra_fields)
 class Usuario(AbstractUser):
     identidad = models.OneToOneField(Persona, on_delete=models.CASCADE, to_field='identidad')
     password = models.CharField(max_length=255)
-    username = None
     es_empleado = models.BooleanField(default=False)
     es_paciente = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'identidad'
     REQUIRED_FIELDS = []
+
+    objects = CustomUserManager()

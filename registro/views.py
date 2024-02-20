@@ -4,10 +4,21 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.exceptions import AuthenticationFailed
 from registro import serializers
-from registro.models import Usuario
+from registro.models import Usuario, Persona
 import jwt, datetime, random, string
 class RegistroPacienteView(APIView):
     def post(self, request):
+        token = request.COOKIES.get('jwt')
+        payload = is_authenticated(token)
+        empleado = Usuario.objects.get(identidad=payload['identidad'])
+
+        if empleado is None:
+            raise AuthenticationFailed('Error de Login')
+
+        if not empleado.is_superuser:
+            if not empleado.is_staff:
+                if not empleado.es_empleado:
+                    raise AuthenticationFailed('Usuario sin permisos')
 
         serializer = serializers.PersonaSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -36,7 +47,7 @@ class LoginView(APIView):
         password = request.data['password']
 
         usuario = Usuario.objects.filter(identidad=identidad).first()
-        print("Encontrado")
+        persona = Persona.objects.get(identidad=identidad)
         if (usuario is None) or (not usuario.check_password(password)):
             raise AuthenticationFailed('Usuario o Contraseña Incorrectos')
 
@@ -51,10 +62,65 @@ class LoginView(APIView):
 
 
         response = Response()
-
         response.set_cookie(key='jwt', value=token, httponly=True)
         response.data = {
-            'jwt': token
+            'jwt': token,
+            'persona': {
+                'primer_nombre': persona.primer_nombre,
+                'segundo_nombre': persona.segundo_nombre,
+                'primer_apellido': persona.primer_apellido,
+                'segundo_apellido': persona.segundo_apellido,
+                'email': persona.email,
+                'telefono': persona.telefono,
+                'direccion': persona.direccion,
+                'estado_civil': persona.estado_civil
+            }
+        }
+        response.status_code = 200
+        return response
+
+class RegistroEmpleadoView(APIView):
+    def post(self, request):
+        token = request.COOKIES.get('jwt')
+        payload = is_authenticated(token)
+        empleado = Usuario.objects.get(identidad=payload['identidad'])
+
+        if empleado is None:
+            raise AuthenticationFailed('Error de Login')
+
+        if not empleado.is_superuser or not empleado.is_staff:
+            raise AuthenticationFailed('Usuario sin permisos')
+
+        serializer = serializers.PersonaSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+
+        user_data = {
+            'identidad': request.data['identidad'],
+            'password': 'asdf.4567', #''.join(random.choice(string.ascii_letters + string.digits) for _ in range(15))
+            'es_paciente': False,
+            'es_empleado': True,
+            'is_superuser': False,
+            'is_staff': False,
+            'username': request.data['identidad']
         }
 
-        return response
+        serializer = serializers.UsuarioSerializer(data=user_data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+
+        return Response({
+            'message': 'Empleado Registrado correctamente'
+        }, status=status.HTTP_201_CREATED)
+
+def is_authenticated(token):
+    if not token:
+        raise AuthenticationFailed('Sin Autenticación')
+
+    try:
+        payload = jwt.decode(token, 'secret', 'HS256')
+    except Exception as e:
+        print(e)
+        raise AuthenticationFailed('TOKEN ERROR')
+
+    return payload

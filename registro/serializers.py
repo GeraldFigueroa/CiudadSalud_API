@@ -9,7 +9,7 @@ class PersonaSerializer(serializers.ModelSerializer):
 class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Usuario
-        fields = ['identidad', 'password', 'es_paciente', 'es_empleado', 'is_superuser', 'is_staff']
+        fields = ['identidad', 'password', 'es_paciente', 'es_empleado', 'is_superuser', 'is_staff', 'username']
         extra_kwargs = {
             'password': {'write_only': True}
         }

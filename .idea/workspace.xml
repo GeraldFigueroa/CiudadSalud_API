@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Tarea(0.1.0) Registro de Paciente (Modelos, Serializadores, Urls y Vistas), Migraciones.">
-      <change afterPath="$PROJECT_DIR$/Changelog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registro/migrations/0002_alter_usuario_managers_usuario_username.py" afterDir="false" />
+    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Tarea(0.2.0) Login de Paciente&#10;Mejora (0.2.1) Mejora del modelo Usuario">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciudadSalud/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ciudadSalud/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registro/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registro/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/urls.py" afterDir="false" />
@@ -101,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707973397830</updated>
-      <workItem from="1707973606695" duration="16045000" />
+      <workItem from="1707973606695" duration="19743000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -119,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707978306494</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tarea(0.2.0) Login de Paciente&#10;Mejora (0.2.1) Mejora del modelo Usuario">
+      <option name="closed" value="true" />
+      <created>1708398715820</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708398715821</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +156,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="Tarea(0.1.0) Registro de Paciente (Modelos, Serializadores, Urls y Vistas), Migraciones." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tarea(0.1.0) Registro de Paciente (Modelos, Serializadores, Urls y Vistas), Migraciones." />
+    <MESSAGE value="Tarea(0.2.0) Login de Paciente&#10;Mejora (0.2.1) Mejora del modelo Usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tarea(0.2.0) Login de Paciente&#10;Mejora (0.2.1) Mejora del modelo Usuario" />
   </component>
 </project>

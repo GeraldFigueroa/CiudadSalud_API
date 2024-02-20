@@ -15,15 +15,17 @@ class Persona(models.Model):
 
 
 class CustomUserManager(BaseUserManager):
-    def create_user(self, identidad, password=None, **extra_fields):
+    def create_user(self, identidad, username=None, password=None, **extra_fields):
         if not identidad:
             raise ValueError('El campo identidad debe ser proporcionado')
-        user = self.model(identidad=identidad, **extra_fields)
+        if not username:
+            username = identidad
+        user = self.model(identidad=identidad, username=username, **extra_fields)
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, identidad, password=None, **extra_fields):
+    def create_superuser(self, identidad, username=None, password=None, **extra_fields):
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
 
@@ -32,7 +34,8 @@ class CustomUserManager(BaseUserManager):
         if extra_fields.get('is_superuser') is not True:
             raise ValueError('Los superusuarios deben tener is_superuser=True.')
         persona = Persona.objects.get(identidad = identidad)
-        return self.create_user(persona, password, **extra_fields)
+        return self.create_user(persona, username, password, **extra_fields)
+
 class Usuario(AbstractUser):
     identidad = models.OneToOneField(Persona, on_delete=models.CASCADE, to_field='identidad')
     password = models.CharField(max_length=255)

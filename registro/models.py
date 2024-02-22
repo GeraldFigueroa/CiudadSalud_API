@@ -13,6 +13,9 @@ class Persona(models.Model):
     direccion = models.CharField(max_length=500)
     estado_civil = models.CharField(max_length=100)
 
+    class Meta:
+        db_table = 'Persona'
+
 
 class CustomUserManager(BaseUserManager):
     def create_user(self, identidad, username=None, password=None, **extra_fields):
@@ -46,3 +49,7 @@ class Usuario(AbstractUser):
     REQUIRED_FIELDS = []
 
     objects = CustomUserManager()
+
+
+    class Meta:
+        db_table = 'Usuario'

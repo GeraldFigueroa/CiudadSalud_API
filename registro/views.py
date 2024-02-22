@@ -147,3 +147,5 @@ class ChangePasswordView(APIView):
         usuario.save()
 
         return Response({'mensaje': 'Contraseña Cambiada'}, status=200)
+
+

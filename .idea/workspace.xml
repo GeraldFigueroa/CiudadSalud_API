@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Tarea(0.4.2) Cambio de Contraseña">
-      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Mejoraa(0.4.3) Preparando para despliegue en Render (Agregando requirements.txt)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ciudadSalud/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ciudadSalud/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registro/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registro/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,22 +38,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.ciudadSalud.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.ciudadSalud.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ciudadSalud" type="Python.DjangoServer" factoryName="Django server">
       <module name="ciudadSalud" />
@@ -99,7 +98,8 @@
       <option name="presentableId" value="Default" />
       <updated>1707973397830</updated>
       <workItem from="1707973606695" duration="23974000" />
-      <workItem from="1708451693906" duration="8745000" />
+      <workItem from="1708451693906" duration="10784000" />
+      <workItem from="1708882118186" duration="5895000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -149,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708406416115</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Mejoraa(0.4.3) Preparando para despliegue en Render">
+      <option name="closed" value="true" />
+      <created>1708580695700</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708580695700</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Mejoraa(0.4.3) Preparando para despliegue en Render (Agregando requirements.txt)">
+      <option name="closed" value="true" />
+      <created>1708580992666</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708580992666</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +189,8 @@
     <MESSAGE value="Tarea(0.3.0) Registro de Empleados" />
     <MESSAGE value="Mejora(0.3.2) Logout" />
     <MESSAGE value="Tarea(0.4.2) Cambio de Contraseña" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tarea(0.4.2) Cambio de Contraseña" />
+    <MESSAGE value="Mejoraa(0.4.3) Preparando para despliegue en Render" />
+    <MESSAGE value="Mejoraa(0.4.3) Preparando para despliegue en Render (Agregando requirements.txt)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mejoraa(0.4.3) Preparando para despliegue en Render (Agregando requirements.txt)" />
   </component>
 </project>

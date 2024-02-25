@@ -41,6 +41,30 @@ class RegistroPacienteView(APIView):
         }, status=status.HTTP_201_CREATED)
 
 
+class PerfilPacienteView(APIView):
+    def get(self, request):
+        token = request.COOKIES.get('jwt')
+        payload = is_authenticated(token)
+
+        persona = Persona.objects.get(identidad=payload['identidad'])
+
+        response = Response()
+        response.data = {
+            'message': 'Perfil de Paciente',
+            'persona': {
+                'primer_nombre': persona.primer_nombre,
+                'segundo_nombre': persona.segundo_nombre,
+                'primer_apellido': persona.primer_apellido,
+                'segundo_apellido': persona.segundo_apellido,
+                'email': persona.email,
+                'telefono': persona.telefono,
+                'direccion': persona.direccion,
+                'estado_civil': persona.estado_civil
+            }
+        }
+        response.status_code = 200
+        return response
+
 class LoginView(APIView):
     def post(self, request):
         identidad = request.data['identidad']
@@ -78,7 +102,6 @@ class LoginView(APIView):
         }
         response.status_code = 200
         return response
-
 class RegistroEmpleadoView(APIView):
     def post(self, request):
         token = request.COOKIES.get('jwt')

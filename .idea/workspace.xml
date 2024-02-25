@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Mejoraa(0.4.3) Preparando para despliegue en Render (Agregando requirements.txt)">
+    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Mejora(0.4.4) Perfil de Usuario, Configuración de CORS para despliegue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciudadSalud/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ciudadSalud/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registro/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +97,7 @@
       <updated>1707973397830</updated>
       <workItem from="1707973606695" duration="23974000" />
       <workItem from="1708451693906" duration="10784000" />
-      <workItem from="1708882118186" duration="5895000" />
+      <workItem from="1708882118186" duration="6634000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -165,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708580992666</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Mejora(0.4.4) Perfil de Usuario, Configuración de CORS para despliegue">
+      <option name="closed" value="true" />
+      <created>1708891398119</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708891398119</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +197,7 @@
     <MESSAGE value="Tarea(0.4.2) Cambio de Contraseña" />
     <MESSAGE value="Mejoraa(0.4.3) Preparando para despliegue en Render" />
     <MESSAGE value="Mejoraa(0.4.3) Preparando para despliegue en Render (Agregando requirements.txt)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mejoraa(0.4.3) Preparando para despliegue en Render (Agregando requirements.txt)" />
+    <MESSAGE value="Mejora(0.4.4) Perfil de Usuario, Configuración de CORS para despliegue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mejora(0.4.4) Perfil de Usuario, Configuración de CORS para despliegue" />
   </component>
 </project>

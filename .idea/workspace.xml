@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Mejora(0.4.4) Perfil de Usuario, Configuración de CORS para despliegue">
+    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Mejora(0.4.4) Configurando el envío de la cookie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciudadSalud/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ciudadSalud/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registro/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +24,20 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "GeraldFigueroa"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="29ec1408-f8c0-4cb0-ba6f-73b5709a389d" />
+        <option name="url" value="https://github.com/GeraldFigueroa/cs_server_bcknd.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,7 +112,7 @@
       <updated>1707973397830</updated>
       <workItem from="1707973606695" duration="23974000" />
       <workItem from="1708451693906" duration="10784000" />
-      <workItem from="1708882118186" duration="6634000" />
+      <workItem from="1708882118186" duration="9751000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -171,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708891398119</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Mejora(0.4.4) Configurando el envío de la cookie">
+      <option name="closed" value="true" />
+      <created>1708893419308</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708893419308</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +221,7 @@
     <MESSAGE value="Mejoraa(0.4.3) Preparando para despliegue en Render" />
     <MESSAGE value="Mejoraa(0.4.3) Preparando para despliegue en Render (Agregando requirements.txt)" />
     <MESSAGE value="Mejora(0.4.4) Perfil de Usuario, Configuración de CORS para despliegue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mejora(0.4.4) Perfil de Usuario, Configuración de CORS para despliegue" />
+    <MESSAGE value="Mejora(0.4.4) Configurando el envío de la cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mejora(0.4.4) Configurando el envío de la cookie" />
   </component>
 </project>

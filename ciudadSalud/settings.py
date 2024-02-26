@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'ciudadSalud.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='sqlite:///db.sqlite3',
+        default='postgres://ciudadsalud_5js0_user:bu2gteN6DfCBFOffT8I5fCvOS4UvRKNW@dpg-cn5o28en7f5s738jfi90-a.oregon-postgres.render.com/ciudadsalud_5js0',
         conn_max_age=600
     )
 }

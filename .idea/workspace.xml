@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Mejora(0.4.4) Configurando el envío de la cookie, atributo samesite">
+    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Mejora(0.4.4) Configurando el envío de la cookie, secure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registro/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/views.py" afterDir="false" />
     </list>
@@ -111,7 +111,7 @@
       <updated>1707973397830</updated>
       <workItem from="1707973606695" duration="23974000" />
       <workItem from="1708451693906" duration="10784000" />
-      <workItem from="1708882118186" duration="11830000" />
+      <workItem from="1708882118186" duration="14493000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -201,7 +201,31 @@
       <option name="project" value="LOCAL" />
       <updated>1708914458871</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Mejora(0.4.4) Configurando el envío de la cookie, httpOnly False">
+      <option name="closed" value="true" />
+      <created>1708916776153</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708916776154</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Mejora(0.4.4) Configurando el envío de la cookie, secure y samesite">
+      <option name="closed" value="true" />
+      <created>1708917008972</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708917008972</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Mejora(0.4.4) Configurando el envío de la cookie, secure">
+      <option name="closed" value="true" />
+      <created>1708921019395</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708921019395</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +254,9 @@
     <MESSAGE value="Mejora(0.4.4) Perfil de Usuario, Configuración de CORS para despliegue" />
     <MESSAGE value="Mejora(0.4.4) Configurando el envío de la cookie" />
     <MESSAGE value="Mejora(0.4.4) Configurando el envío de la cookie, atributo samesite" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mejora(0.4.4) Configurando el envío de la cookie, atributo samesite" />
+    <MESSAGE value="Mejora(0.4.4) Configurando el envío de la cookie, httpOnly False" />
+    <MESSAGE value="Mejora(0.4.4) Configurando el envío de la cookie, secure y samesite" />
+    <MESSAGE value="Mejora(0.4.4) Configurando el envío de la cookie, secure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mejora(0.4.4) Configurando el envío de la cookie, secure" />
   </component>
 </project>

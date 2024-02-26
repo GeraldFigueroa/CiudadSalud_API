@@ -86,7 +86,7 @@ class LoginView(APIView):
 
 
         response = Response()
-        response.set_cookie(key='jwt', value=token, httponly=False, secure=False, samesite='None')
+        response.set_cookie(key='jwt', value=token, samesite='Lax')
         response.data = {
             'jwt': token,
             'persona': {

@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Mejora(0.4.4) Configurando el envío de la cookie, secure">
+    <list default="true" id="6aba01b3-726f-444c-ab05-90fd9e85a982" name="Changes" comment="Mejora(0.4.4) Configurando el envío de la cookie, samesite Lax">
+      <change afterPath="$PROJECT_DIR$/registro/migrations/0004_empleado.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registro/migrations/0005_cargo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registro/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registro/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registro/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/registro/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +116,7 @@
       <updated>1707973397830</updated>
       <workItem from="1707973606695" duration="23974000" />
       <workItem from="1708451693906" duration="10784000" />
-      <workItem from="1708882118186" duration="14493000" />
+      <workItem from="1708882118186" duration="22979000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -225,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708921019395</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Mejora(0.4.4) Configurando el envío de la cookie, samesite Lax">
+      <option name="closed" value="true" />
+      <created>1708922391769</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708922391769</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +270,7 @@
     <MESSAGE value="Mejora(0.4.4) Configurando el envío de la cookie, httpOnly False" />
     <MESSAGE value="Mejora(0.4.4) Configurando el envío de la cookie, secure y samesite" />
     <MESSAGE value="Mejora(0.4.4) Configurando el envío de la cookie, secure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mejora(0.4.4) Configurando el envío de la cookie, secure" />
+    <MESSAGE value="Mejora(0.4.4) Configurando el envío de la cookie, samesite Lax" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mejora(0.4.4) Configurando el envío de la cookie, samesite Lax" />
   </component>
 </project>

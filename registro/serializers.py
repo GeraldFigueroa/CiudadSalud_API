@@ -6,6 +6,11 @@ class PersonaSerializer(serializers.ModelSerializer):
         model = models.Persona
         fields = '__all__'
 
+class EmpleadoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Empleado
+        fields = '__all__'
+
 class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Usuario
@@ -21,3 +26,8 @@ class UsuarioSerializer(serializers.ModelSerializer):
             instace.set_password(password)
         instace.save()
         return instace
+
+class CargoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Cargo
+        fields = '__all__'

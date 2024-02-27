@@ -53,3 +53,17 @@ class Usuario(AbstractUser):
 
     class Meta:
         db_table = 'Usuario'
+
+class Empleado(models.Model):
+    identidad = models.OneToOneField(Persona, on_delete=models.CASCADE, to_field='identidad')
+    cargo = models.CharField(max_length=100)
+    fecha_contratacion = models.DateField()
+    salario = models.DecimalField(max_digits=10, decimal_places=2)
+    #horario = models.CharField(max_length=100)
+    class Meta:
+        db_table = 'Empleado'
+
+class Cargo(models.Model):
+    cargo = models.CharField(max_length=100)
+    class Meta:
+        db_table = 'Cargo'
